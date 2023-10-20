@@ -41,10 +41,33 @@ ul li{
     text-align: center;
     font-size: 30pt;
     font-family: 'AR One Sans', sans-serif;
+    height: 1px;
 }
 
 h4 , h3{
     color: red;
     text-shadow: 1px 1px 20px rgba(255, 0, 0, 0.458);
+}
+
+.btn{
+    position: absolute;
+    top: 570px;
+    left: 780px;
+    width: 400px;
+   
+    
+}
+
+button{
+   
+    width: 150px;
+    height: 40px;
+    margin-left: 15px;
+    font-size: 20pt;
+    border-radius: 20px;
+    &:hover{
+        text-shadow: 5px 5px 40px white;
+        transform: scale(1.2);
+    }
 }
 
