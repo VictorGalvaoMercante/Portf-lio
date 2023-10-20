@@ -1,138 +1,50 @@
-@import url('https://fonts.cdnfonts.com/css/futura-pt');
-.container{
-    min-height: 100vh;
-    min-width: 100%;
-    background:linear-gradient( red , rgb(171, 133, 133));
-    background-size: cover;
-    background-position: center;
-    background-repeat:no-repeat;
-   
-   
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-header{
-    background-color: rgba(210, 98, 98, 0.945);
-    backdrop-filter: blur(20px);
+#particles-js{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+
+ul{
     display: flex;
     justify-content: space-between;
-    font-family: 'Futura PT', sans-serif;
-    height: 90px;
+    padding: 40px 100px 0px 100px;
+    font-size: 20pt;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+  
+}
+ul li a{
     color: white;
-    padding: 20px;
-    background-attachment: fixed;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.329);
-
-}
-h1{
-    font-size: 28pt;
-    margin-left: 60px;
-}
-                                                
-nav{
-    display: flex;
-    list-style: none;
-    margin-top: 10px;
-    
-    
-   
-}
-a{
     text-decoration: none;
-    color: white;
-    margin-left: 30px;
-    margin-right: 40px;
-    font-size: 18pt;
-
+    list-style: none;
    
 }
-li{
+ul li{
     &:hover{
         transform: scale(1.2);
-        text-shadow: 1px 1px 20px rgb(255, 255, 255);
+        text-shadow: 4px 4px 50px rgb(253, 0, 0);
     }
-    list-style: none;
 }
-
-.home a {
-   font-size: 30pt;
-   margin-left: 90px;
-
-}
-.apresentacao{
-    text-align: center;
-    margin-top: 300px;
-    font-family: 'Futura PT', sans-serif;
-    color: rgb(65, 2, 2);
-    font-size: 30pt;
-
-}
-.digitacao{
-    width: 950px;
-    margin-left: 450px;
-    animation: cursor 500ms infinite normal , typing 3s steps(40) 1s;
-    border-right: 3px solid;
-    white-space: nowrap;
-    overflow: hidden;
-   
-   
-    
-}
-h2{
+#apresentacao{
     color: white;
-    text-shadow: 1px 1px 20px rgba(221, 213, 213, 0.698);
-}
-@keyframes typing{
-    from{
-        width: 0;
-    }
-    to{
-        width: 950px;
-    }
-}
-@keyframes cursor{
-    from{
-        border-right-color:white;
-    }
-    to{
-        border-right-color: transparent;
-    }
-}
-h3{
     position: absolute;
-    left: 600px;
-    top: 340px;
-
-}
-h4{
-    color:rgb(65, 2, 2);
-}
-.btn{
-    margin-left: 750px;
-    margin-top: 20px;
-}
-
-button{
-    background-color: rgba(0, 0, 0, 0.945);
-    border: 1px solid black;
-    border-radius: 20px;
-    margin-left:20px;
-    width: 200px;
-    height: 50px;
+    top: 320px;
+    left: 0;
+    bottom: 0;
+    right: 0;
     text-align: center;
-    
-
+    font-size: 30pt;
+    font-family: 'AR One Sans', sans-serif;
 }
 
-.seta{
-    width: 100px;
-    height: 100px;
-    margin-left: 900px;
-    margin-top: 240px;
+h4 , h3{
+    color: red;
+    text-shadow: 1px 1px 20px rgba(255, 0, 0, 0.458);
 }
 
-.section{
-    background-color: white;
-    height: 300px;
-    margin-top: 500px;   
-    background-attachment: fixed;
-}
