@@ -42,11 +42,39 @@ ul li{
     font-size: 30pt;
     font-family: 'AR One Sans', sans-serif;
     height: 1px;
+  
 }
 
 h4 , h3{
     color: red;
     text-shadow: 1px 1px 20px rgba(255, 0, 0, 0.458);
+}
+.line{
+    border-right: 2px solid white;
+    width: 1250px;
+    margin-left: 350px;
+    white-space: nowrap;
+    overflow: hidden;          
+}
+.typing-animation{
+    animation: blinkCursor 500ms infinite normal, typing 3s steps(40) normal;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 1250px;
+    }
+}
+
+@keyframes blinkCursor {
+    from{
+        border-right-color: white;
+    }
+    to{
+        border-right-color:transparent ;
+    }
 }
 
 .btn{
