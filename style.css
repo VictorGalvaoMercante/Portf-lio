@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 #particles-js{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: black;
+}
+body{
+    background-color: black;
+}
+#home{
+    overflow: hidden;
 }
 
 
@@ -161,8 +167,48 @@ button{
 }
 
 .container{
-    background-color: red;
+    
     position: absolute;
     display: flex;
     justify-content: space-between;
+
+
+}
+.textoSobremim {
+    color: white;
+    width: 620px;
+    margin-top: 200px;
+    font-size: 18pt;
+    margin-left: 140px;
+    margin-right: 500px;
+    font-family: 'AR One Sans', sans-serif;
+    text-shadow: 1px 1px 20px red;
+    animation: go-back-left 1s normal;
+
+    
+}
+.myImg img{
+    margin-top: 100px;
+    border-radius: 50%;
+    scale: 1.1;
+    animation: go-back-right 1s normal;
+}
+@keyframes go-back-right{
+    from{
+        margin-left: 1000px;
+    }
+}
+@keyframes go-back-left{
+    from{
+        margin-left: -1000px;
+    }
+}
+.boxContainer{
+    width: 4200px;
+    height: 400px;
+    background-color: rgb(243, 0, 0);
+    margin-top: 800px;
+    margin-left: -200px;
+    position: absolute;
+    transform: rotate(-5deg);
 }
